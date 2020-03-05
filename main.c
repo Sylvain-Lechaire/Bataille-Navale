@@ -29,6 +29,9 @@ do {
                   " à la première guerre3. La première version commerciale du jeu fut publiée en 1931 par la Starex Novelty Co. sous le nom de Salvo4. Ce jeu est devenu"
                   " populaire lors de son apparition en 1943 dans les publications américaines de divertissement de la Milton Bradley Company qui l'exploita sous la forme "
                   "papier jusqu'en 1967, où elle sortit un jeu de plateau5, puis en réalisa une version électronique en 1977.\n");
+
+
+
                     printf("règles: La bataille navale oppose deux joueurs qui s'affrontent."
                            " Chacun a une flotte composée de 5 bateaux, qui sont, en général,"
                            " les suivants : 1 porte-avion (5 cases), 1 croiseur (4 cases), "
@@ -44,7 +47,7 @@ do {
                            "salve (trois coups par exemple) et de donner le résultat global de la salve.");
     }
 
-}while(menu>3);
+}while(menu!=3);
 
     return 0;
 }
