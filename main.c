@@ -35,12 +35,14 @@ do {
              */
 
             //affiche le tableau et implémente les valeures
+
             int tableau [10] [10];
             for (int j = 0; j <= 9 ; ++j) {
-                printf("\n");
+                printf("\n"); //pour les lignes
                 for (int i = 0; i <= 9 ; ++i) {
                     tableau [i] [j] = 0;
-                printf("%d  ", tableau[i] [j]);
+                    //printf("a");
+                    printf("%d  ", tableau[i] [j]);
                 }
 
             }
@@ -62,10 +64,10 @@ do {
             //porte avions
             for (int i = 0; i < 4 ; ++i) {
                 tableau [0] [i] = 1;
-                printf("%d", tableau [0] [i]);
+                //printf("%d", tableau [0] [i]);
             }
             for (int k = 0; k <= 9 ; ++k) {
-                printf("%d \n", tableau [k] [k]);
+                //printf("%d \n", tableau [k] [k]);
 
             }
 
