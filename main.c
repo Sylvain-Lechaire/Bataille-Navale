@@ -33,12 +33,14 @@ do {
             /*/
              * infos: 0= case vide 1= bateau présent 2: endroit touché mais raté 3= bateau touché 4=touché coulé
              */
+
+            //affiche le tableau et implémente les valeures
             int tableau [10] [10];
             for (int j = 0; j <= 9 ; ++j) {
                 printf("\n");
                 for (int i = 0; i <= 9 ; ++i) {
-                    tableau [i] [j] = 1;
-                printf("0  ");
+                    tableau [i] [j] = 0;
+                printf("%d  ", tableau[i] [j]);
                 }
 
             }
