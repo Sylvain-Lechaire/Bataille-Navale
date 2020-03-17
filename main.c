@@ -15,6 +15,8 @@ int main() {
     int aide;
     int axeX;
     int axeY;
+    int commande;
+    int c;
 printf("bataille navale \n");
 printf ("bonjour, bienvenue sur la bataille navale, choissiez une des options si dessous\n");
 do {
@@ -45,7 +47,23 @@ do {
                     printf("%d  ", tableau[i] [j]);
                 }
 
+
             }
+            // effectuer un tir
+            printf("choissiez un chiffre entre 1 et 10 dans l'axe X");
+            scanf("%d", &axeX);
+            printf("choissisez un chiffre entre 1 et 10 dans l'axe Y ");
+            scanf("%d", &axeY);
+            printf("ensuite effectuez votre tir");
+            scanf("%d", &commande);
+            tableau [axeX] [axeY] = commande;
+
+            for(int l=0;l<=9;l++){
+                printf("\n"); //pour les lignes
+                    for(int c=0;c<=0;c++);
+                    printf("%d  ", tableau [l] [c]);
+            }
+
             printf("\n");
            // printf("  A  B  C  D  E  F  G  H  I  J  \n"
                  //  "1 |-||-||-||-||-||-||-||-||-||-|\n"
