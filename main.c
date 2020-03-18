@@ -9,6 +9,18 @@
 #include <stdlib.h>
 
 int main() {
+    int tableau [10] [10]= {
+            {1,1,1,1,0,0,0,0,0},
+            {0,0,0,0,0,0,2,2,2},
+            {0,0,0,5,5,0,0,0,0},
+            {0,0,0,0,0,0,0,0,0},
+            {5,5,0,0,0,0,0,0,0},
+            {0,0,0,3,3,3,0,0,0},
+            {0,0,0,0,0,0,0,0,0},
+            {0,0,4,4,4,4,4,0,0},
+            {0,0,0,0,0,0,0,0,0},
+            {0,0,0,0,0,0,0,0,0}
+    };
     SetConsoleOutputCP(CP_UTF8);
 
     int menu;
@@ -38,7 +50,7 @@ do {
 
             //affiche le tableau et implémente les valeures
 
-            int tableau [10] [10];
+           // int tableau [10] [10];
             for (int j = 0; j <= 9 ; ++j) {
                 printf("\n"); //pour les lignes
                 for (int i = 0; i <= 9 ; ++i) {
@@ -54,16 +66,27 @@ do {
             scanf("%d", &axeX);
             printf("choissisez un chiffre entre 1 et 10 dans l'axe Y ");
             scanf("%d", &axeY);
-            printf("ensuite effectuez votre tir");
-            scanf("%d", &commande);
-            tableau [axeX] [axeY] = commande;
 
-            for(int l=0;l<=9;l++){
+            if (axeX > 0){
+                if (axeY > 0){
+                    printf("touché");
+                }
+            }
+
+
+
+
+            //printf("ensuite effectuez votre tir");
+            //scanf("%d", &commande);
+            //tableau [axeX] [axeY] = commande;
+           printf("%d", tableau [axeX] [axeY]);
+
+           /* for(int l=0;l<=9;l++){
                 printf("\n"); //pour les lignes
                     for(int c=0;c<=0;c++);
                     printf("%d  ", tableau [l] [c]);
             }
-
+            */
             printf("\n");
            // printf("  A  B  C  D  E  F  G  H  I  J  \n"
                  //  "1 |-||-||-||-||-||-||-||-||-||-|\n"
@@ -78,16 +101,6 @@ do {
                    //"10|-||-||-||-||-||-||-||-||-||-|\n");
 
 
-            //placer les bateaux
-            //porte avions
-            for (int i = 0; i < 4 ; ++i) {
-                tableau [0] [i] = 1;
-                //printf("%d", tableau [0] [i]);
-            }
-            for (int k = 0; k <= 9 ; ++k) {
-                //printf("%d \n", tableau [k] [k]);
-
-            }
 
 
             break;
