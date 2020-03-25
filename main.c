@@ -29,14 +29,17 @@ int main() {
     int axeY;
     int commande;
     int c;
+    //int user;
+    char user [100];
 printf("bataille navale \n");
 printf ("bonjour, bienvenue sur la bataille navale, choissiez une des options si dessous\n");
 do {
     printf("1 demarrer le jeu\n");
     printf("2 afficher l'aide\n");
     printf("3 sortir du programme\n");
+    printf("4 se conncecter en tant que utilisateur\n");
     scanf("%d", &menu);
-    if (menu > 3)
+    if (menu > 4)
         printf("erreur chiffre trop grand\n");
     system("cls");
     switch (menu) {
@@ -122,6 +125,13 @@ do {
                 printf("appuyez sur 5 pour sortir de l'aide\n");
                 scanf("%d",&aide);
             }while(aide != 5);
+        case 4:
+
+            printf("se connecter en tant que utilisateur\n");
+            printf("veuillez tappez votre nom d'utilisateur, votre nom d'utilisateur ne dois pas dépasser 100 caractères\n");
+            scanf("%s", &user);
+            printf("bonjour, bienvenue %s !\n", user);
+
 
 
 
