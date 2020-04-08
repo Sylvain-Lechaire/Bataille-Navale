@@ -1,7 +1,7 @@
 /*/
  * projet: bataille navale
  * auteur: Sylvain Léchaire
- * version: 0.1
+ * version: 1.0
  * date de dernière modification 13.03.2020
  */
 #include <stdio.h>
@@ -36,8 +36,8 @@ printf ("bonjour, bienvenue sur la bataille navale, choissiez une des options si
 do {
     printf("1 demarrer le jeu\n");
     printf("2 afficher l'aide\n");
-    printf("3 sortir du programme\n");
-    printf("4 se conncecter en tant que utilisateur\n");
+    printf("sortir du programme (appuyez sur 0)\n");
+    printf("3 se conncecter en tant que utilisateur\n");
     scanf("%d", &menu);
     if (menu > 4)
         printf("erreur chiffre trop grand\n");
@@ -124,13 +124,17 @@ do {
                 printf("\n"); //espace
                 printf("appuyez sur 5 pour sortir de l'aide\n");
                 scanf("%d",&aide);
+
+
             }while(aide != 5);
-        case 4:
+            break;
+        case 3:
 
             printf("se connecter en tant que utilisateur\n");
             printf("veuillez tappez votre nom d'utilisateur, votre nom d'utilisateur ne dois pas dépasser 100 caractères\n");
             scanf("%s", &user);
             printf("bonjour, bienvenue %s !\n", user);
+            break;
 
 
 
@@ -138,7 +142,7 @@ do {
 
     }
 
-}while(menu!=3);
+}while(menu!=0);
 
     return 0;
 }
